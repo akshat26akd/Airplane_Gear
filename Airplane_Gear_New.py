@@ -1,8 +1,11 @@
 class LandingGearFSM:
+    """ """
+
     def __init__(self):
         self.state = "retracted"
 
     def retract(self):
+        """ """
         if self.state == "extended":
             self.state = "retracting"
             print("Retracting landing gear...")
@@ -13,6 +16,7 @@ class LandingGearFSM:
             print("Landing gear is already retracted.")
 
     def extend(self):
+        """ """
         if self.state == "retracted":
             self.state = "extending"
             print("Extending landing gear...")
@@ -21,6 +25,7 @@ class LandingGearFSM:
             print("Landing gear extended.")
         else:
             print("Landing gear is already extended.")
+
 
 if __name__ == "__main__":
     landing_gear = LandingGearFSM()
