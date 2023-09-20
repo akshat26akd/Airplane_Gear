@@ -1,5 +1,6 @@
 class LandingGearFSM:
     """ """
+
     def __init__(self):
         self.state = "retracted"
 
