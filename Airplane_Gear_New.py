@@ -22,6 +22,7 @@ class LandingGearFSM:
         else:
             print("Landing gear is already extended.")
 
+
 if __name__ == "__main__":
     landing_gear = LandingGearFSM()
     landing_gear.extend()
